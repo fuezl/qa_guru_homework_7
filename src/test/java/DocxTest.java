@@ -15,7 +15,7 @@ public class DocxTest {
     String checkedText = "Работаем с файлами";
 
     @Test
-    void simpleXlsTest() throws Exception {
+    void docxTest() throws Exception {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         InputStream stream = classLoader.getResourceAsStream("Homework_Word.docx");
         assert stream != null;
