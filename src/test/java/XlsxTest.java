@@ -24,7 +24,6 @@ public class XlsxTest {
         InputStream stream = classLoader.getResourceAsStream("Homework_Excel.xls");
         assert stream != null;
         XLS xlsFile = new XLS(stream);
-        int index = 2;
         String columnNamesFromExcel;
         int i = 0;
         while (i < columnNames.length) {
