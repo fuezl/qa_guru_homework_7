@@ -9,6 +9,7 @@ repositories {
 dependencies {
     testImplementation (
             "org.apache.poi:poi:5.0.0",
+            "net.lingala.zip4j:zip4j:1.3.2",
             "com.codeborne:selenide:5.23.0",
             "com.codeborne:pdf-test:1.6.1",
             "com.codeborne:xls-test:1.4.3",
