@@ -25,11 +25,16 @@ public class XlsxTest {
         assert stream != null;
         XLS xlsFile = new XLS(stream);
         int index = 2;
-        String columnNamesFromExcel = xlsFile.excel
-                .getSheetAt(0)
-                .getRow(0)
-                .getCell(index)
-                .getStringCellValue();
-        assertEquals(columnNames[index], columnNamesFromExcel);
+        String columnNamesFromExcel;
+        int i = 0;
+        while (i < columnNames.length) {
+            columnNamesFromExcel = xlsFile.excel
+                    .getSheetAt(0)
+                    .getRow(0)
+                    .getCell(i)
+                    .getStringCellValue();
+            assertEquals(columnNames[i], columnNamesFromExcel);
+            i++;
+        }
     }
 }
